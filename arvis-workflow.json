@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "category": "Internet",
+  "creator": "anshumanv",
+  "description": "Workflow to take control of your github notifications",
+  "name": "arvis-github-notifications",
+  "readme": "",
+  "version": "0.0.1",
+  "defaultIcon": "icon.png",
+  "webAddress": "https://github.com/anshumanv",
+  "enabled": true,
+  "variables": {},
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "gn",
+      "title": "Take control of your github notifications",
+      "subtitle": "gn <optional: all, participating>",
+      "scriptFilter": "node index.js \"{query}\"",
+      "runningSubtext": "Fetching your notifications",
+      "withspace": true,
+      "argType": "optional",
+      "actions": [
+        {
+          "modifiers": "normal",
+          "type": "open",
+          "target": "{query}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "arvis-github-notifications",
+  "version": "0.0.1",
+  "description": "Arvis workflow to take control of your github notifications",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshumanv/arvis-github-notifications.git"
+  },
+  "keywords": [
+    "arvis",
+    "arvish",
+    "workflow",
+    "github",
+    "api",
+    "notifications"
+  ],
+  "files": [
+    "index.js",
+    "icon.png",
+    "arvis-workflow.json"
+  ],
+  "author": "anshumanv",
+  "license": "MIT",
+  "dependencies": {
+    "arvish": "^0.4.5"
+  }
+}
