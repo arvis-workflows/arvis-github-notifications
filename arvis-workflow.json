@@ -5,11 +5,13 @@
   "description": "Workflow to take control of your github notifications",
   "name": "arvis-github-notifications",
   "readme": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "defaultIcon": "icon.png",
   "webAddress": "https://github.com/anshumanv",
   "enabled": true,
-  "variables": {},
+  "variables": {
+    "access_token": ""
+  },
   "commands": [
     {
       "type": "scriptFilter",
